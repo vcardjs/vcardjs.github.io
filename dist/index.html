@@ -10,7 +10,7 @@
     <img
         alt="vCard.js Logo: A yellow rectangle with the text vCard.js in gray with decorative characters above it."
         class="logo"
-        src="https://raw.githubusercontent.com/vcardjs/logo/refs/heads/main/images/logo.png"
+        src="https://raw.githubusercontent.com/vcardjs/logo/refs/heads/main/images/logo-square.png"
     >
 
     <style>
@@ -18,16 +18,24 @@
             align-items: center;
             background-color: #f0db4f;
             display: flex;
-            height: 100%;
+            height: 100vh;
             justify-content: center;
             margin: 0;
             padding: 0;
-            width: 100%;
+            width: 100vw;
         }
 
         .logo {
-            height: auto;
-            width: 100vw;
+          height: 100%;
+          object-fit: contain;
+          width: 100%;
+        }
+
+        @media (min-width: 1920px) and (min-height: 1920px) {
+          .logo {
+            height: 1920px;
+            width: 1920;
+          }
         }
     </style>
 </body>
